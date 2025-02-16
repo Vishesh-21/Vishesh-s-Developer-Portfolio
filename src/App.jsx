@@ -1,10 +1,12 @@
 import React from 'react'
-import { Button } from './components/ui/button'
+import Navbar from './components/Navbar/Navbar'
+import { Home } from './Home'
 
 const App = () => {
   return (
-    <div className='p-24' >
-      <Button>Hello</Button>
+    <div >
+      <Navbar/>
+      <Home/>
     </div>
   )
 }
