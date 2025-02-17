@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="mx-auto w-[85%] flex flex-col md:flex-row items-center justify-between px-6">
         {/* Left - Branding */}
         <div className="text-center md:text-left">
-          <h1 className="text-xl font-semibold">Vishesh | Full-Stack Developer</h1>
+          <h1 className="text-xl text-white font-semibold">Vishesh | Full-Stack Developer</h1>
           <p className="text-sm text-[#998F8F]">Crafting seamless digital experiences.</p>
         </div>
 

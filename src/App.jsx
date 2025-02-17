@@ -1,15 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
 import { Home } from './Home'
-import { Footer } from './components/Footer/Footer'
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
+import { AllProjects } from './components/DashBoard/dashComp/AllProjects'
 
 const App = () => {
   return (
-    <div >
-      <Navbar/>
-      <Home/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/projects' element={<AllProjects/>}/>
+      </Routes>
+    </Router>
   )
 }
 

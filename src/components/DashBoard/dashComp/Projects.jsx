@@ -4,9 +4,15 @@ import imageEditor from "@/assets/Screenshot 2025-02-16 233052.png";
 import JobPortal from "@/assets/Screenshot 2025-02-16 233421.png";
 import TaskManager from "@/assets/Screenshot 2025-02-16 234000.png";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const Projects = () => {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/projects')
+  }
+
   return (
     <div className="mt-30">
       <div>
@@ -121,6 +127,7 @@ export const Projects = () => {
         <button
           type="button"
           class="text-black bg-white font-semibold focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-gray-800 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-200/80 font-medium rounded-lg cursor-pointer text-sm px-5 py-2.5 text-center me-2 mb-2"
+          onClick={handleClick}
         >
           See More Projects <ArrowRight className="inline" />
         </button>

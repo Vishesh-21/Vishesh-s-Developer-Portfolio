@@ -5,6 +5,7 @@ export const GitHubContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [githubData, setGithubData] = useState("");
+  const [repos ,setRepos] = useState([]);
   
   useEffect(() => {
     const fetchData = async () => {
@@ -16,8 +17,18 @@ export const ContextProvider = ({ children }) => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get("https://api.github.com/users/Vishesh-21/repos");
+      if (res.status === 200) {
+        setRepos(res.data);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
-    <GitHubContext.Provider value={{githubData}}>
+    <GitHubContext.Provider value={{githubData,repos}}>
       {children}
     </GitHubContext.Provider>
   );
