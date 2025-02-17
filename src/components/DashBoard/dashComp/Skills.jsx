@@ -57,14 +57,14 @@ export const Skills = () => {
         </div>
       </div>
 
-      <div className="mt-24">
+      <div className="mt-18">
         <h1 className="text-[6rem] text-white font-extrabold leading-14">
           Languages &
         </h1>
         <h2 className="text-[6rem] text-[#353334] font-extrabold leading-20 mt-6">
           Frameworks
         </h2>
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 mt-8">
+        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 pl-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
           {arr.map((item) => (
             <Badge className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
               {item}
@@ -73,14 +73,14 @@ export const Skills = () => {
         </div>
       </div>
 
-      <div className="mt-24">
+      <div className="mt-18">
         <h1 className="text-[6rem] text-white font-extrabold leading-14">
           Tools &
         </h1>
         <h2 className="text-[6rem] text-[#353334] font-extrabold leading-20 mt-6">
           Technologies
         </h2>
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 mt-8">
+        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 pl-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
           {tech.map((item) => (
             <Badge className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
               {item}

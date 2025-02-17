@@ -35,7 +35,7 @@ const arr = [
 
 export const Sidebar = () => {
   return (
-    <div className="w-[42%] bg-[#FFFFFF] rounded-2xl mb-4 py-10 px-4 flex flex-col items-center justify-between">
+    <div className="w-[42%] h-screen bg-[#FFFFFF] rounded-2xl mb-4 py-10 px-4 flex flex-col items-center justify-between sticky top-4">
       {/* {logo image} */}
       <div className="w-[230px] h-[230px] overflow-hidden">
         <img
