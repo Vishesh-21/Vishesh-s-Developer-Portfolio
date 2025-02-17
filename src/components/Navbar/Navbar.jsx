@@ -33,7 +33,7 @@ const arr = [
 const Navbar = () => {
   return (
     <div className="flex items-center justify-center">
-      <nav className="bg-[#1C1A19] py-3 px-6 fixed top-4 rounded-b-4xl">
+      <nav className="bg-[#1C1A19] py-3 px-6 fixed top-4 rounded-b-4xl z-10">
         <TooltipProvider className="flex">
           <div className="flex gap-10">
             {arr.map((item, index) => {
