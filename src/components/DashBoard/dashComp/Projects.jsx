@@ -14,18 +14,18 @@ export const Projects = () => {
   }
 
   return (
-    <div className="mt-30">
+    <div className="md:mt-30 mt-18">
       <div>
-        <h1 className="text-[6rem] text-white font-extrabold uppercase leading-14">
+        <h1 className="md:text-[6rem] text-[3rem] text-white md:text-start text-center font-extrabold uppercase md:leading-14 leading-0">
           Recent
         </h1>
-        <h2 className="text-[6rem] text-[#353334] font-extrabold uppercase leading-20 mt-6">
+        <h2 className="md:text-[6rem] text-[#353334] text-[3rem] md:text-start text-center  font-extrabold uppercase md:leading-20 mt-6 leading-12">
           Projects
         </h2>
       </div>
 
       {/* projects showing */}
-      <div className="text-white mt-6 flex flex-col gap-4">
+      <div className="text-white md:mt-6 mt-2 flex flex-col gap-4">
         <a
           href="https://business-name-generator-bay.vercel.app/"
           target="_blank"
@@ -37,11 +37,11 @@ export const Projects = () => {
               src={BNG}
               target="_blank"
               alt="Image"
-              className="w-42 h-42 object-cover rounded-2xl"
+              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
-              <h1 className="text-2xl font-bold">Business Name Generator</h1>
-              <h2 className="text-[#998F8F]">
+              <h1 className="md:text-2xl text-xl font-bold">Business Name Generator</h1>
+              <h2 className="text-[#998F8F] md:text-[1rem] text-sm">
                 Generate unique and catchy business names instantly! Our
                 AI-powered tool helps you find the perfect name for your
                 startup, brand, or project—complete with domain availability
@@ -61,11 +61,11 @@ export const Projects = () => {
             <img
               src={JobPortal}
               alt="Image"
-              className="w-42 h-42 object-cover rounded-2xl"
+              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
-              <h1 className="text-2xl font-bold">Job Portal Application</h1>
-              <h2 className="text-[#998F8F]">
+              <h1 className="md:text-2xl text-xl font-bold">Job Portal Application</h1>
+              <h2 className="text-[#998F8F] md:text-[1rem] text-sm">
                 Effortlessly manage and track job applications. Our system helps
                 recruiters view, sort, and filter applicants based on
                 experience, skills, and application date—making hiring faster
@@ -85,11 +85,11 @@ export const Projects = () => {
             <img
               src={TaskManager}
               alt="Image"
-              className="w-42 h-42 object-cover rounded-2xl"
+             className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
-              <h1 className="text-2xl font-bold">Task Manager</h1>
-              <h2 className="text-[#998F8F]">
+              <h1 className="md:text-2xl text-xl font-bold">Task Manager</h1>
+              <h2 className="text-[#998F8F] md:text-[1rem] text-sm">
                 Stay organized and boost productivity with our Task Manager.
                 Easily create, prioritize, and track tasks in real time—ensuring
                 nothing falls through the cracks.
@@ -108,11 +108,11 @@ export const Projects = () => {
             <img
               src={imageEditor}
               alt="Image"
-              className="w-42 h-42 object-cover rounded-2xl"
+              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
-              <h1 className="text-2xl font-bold">Image Editor</h1>
-              <h2 className="text-[#998F8F]">
+              <h1 className="md:text-2xl text-xl font-bold">Image Editor</h1>
+              <h2 className="text-[#998F8F] md:text-[1rem] text-sm">
                 A simple yet powerful image editor built with HTML, CSS, and
                 JavaScript. Edit, crop, apply filters, and enhance images right
                 from your browser—no downloads needed!
@@ -126,7 +126,7 @@ export const Projects = () => {
       <div className="text-center mt-8">
         <button
           type="button"
-          class="text-black bg-white font-semibold focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-gray-800 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-200/80 font-medium rounded-lg cursor-pointer text-sm px-5 py-2.5 text-center me-2 mb-2"
+          class="text-black bg-white focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-gray-800 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-200/80 md:font-semibold md:rounded-lg cursor-pointer rounded-md text-sm md:px-5 md:py-2.5 px-2 py-1 text-center me-2 mb-2"
           onClick={handleClick}
         >
           See More Projects <ArrowRight className="inline" />

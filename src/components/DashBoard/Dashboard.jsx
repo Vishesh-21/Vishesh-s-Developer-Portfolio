@@ -6,7 +6,7 @@ import { Contact } from './dashComp/Contact'
 
 export const Dashboard = () => {
   return (
-    <div id='dashboard' className='w-full p-4 overflow-auto'>
+    <div id='dashboard' className='w-full py-4'>
         <About/>
         <Projects/>
         <Skills/>

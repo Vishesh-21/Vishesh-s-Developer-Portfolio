@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full mt-28 flex gap-8 px-[100px] mb-4">
+      <div className="w-full mt-28 flex md:flex-row flex-col gap-10 md:px-[100px] px-[30px] mb-4">
         <Sidebar />
         <Dashboard />
       </div>

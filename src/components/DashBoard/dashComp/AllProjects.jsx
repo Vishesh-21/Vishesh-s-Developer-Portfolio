@@ -14,21 +14,21 @@ export const AllProjects = () => {
   return (
     <>
       <Navbar />
-      <div className="text-white mt-22 px-24  grid grid-cols-2 gap-4 mb-8">
-        {repos.map((repo, index) => {
+      <div className="text-white mt-22 md:px-24 px-4  grid sm:grid-cols-2 grid-cols-1 md:gap-10 gap-4 mb-8">
+        {sortedRepos.map((repo, index) => {
           return (
             <div
               key={index}
-              className="relative flex p-4 gap-7 items-center justify-start rounded-xl border-l-[2px] border-r-[2px]"
+              className="relative flex md:p-4 px-2 gap-7 items-center justify-start rounded-xl border-l-[2px] border-r-[2px]"
             >
-              <h1 className="text-[7rem] font-extrabold  gap-2">
+              <h1 className="md:text-[7rem] text-[4rem] font-extrabold  gap-2">
                 {Number(index) + 1}
               </h1>
               <div>
-                <h2 className="text-2xl font-bold capitalize mb-2">
+                <h2 className="md:text-2xl text-lg font-bold capitalize md:mb-2">
                   {repo?.name}
                 </h2>
-                <p className="text-[0.8rem] w-[300px]">
+                <p className="md:text-[0.8rem] text-[0.7rem] md:w-[300px] w-[200px]">
                   {repo?.description
                     ? repo.description.split(" ").slice(0, 21).join(" ") +
                       (repo.description.split(" ").length > 21 ? " ..." : "")

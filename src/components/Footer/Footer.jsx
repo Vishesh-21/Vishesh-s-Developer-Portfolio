@@ -3,7 +3,7 @@ import { Contact, Github, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full mb-8 text-gray-300 py-6">
+    <footer className="w-full md:mb-8 text-gray-300 mb-2 py-6">
       <div className="mx-auto w-[85%] flex flex-col md:flex-row items-center justify-between px-6">
         {/* Left - Branding */}
         <div className="text-center md:text-left">
@@ -12,9 +12,9 @@ export const Footer = () => {
         </div>
 
         {/* Center - Social Media Links */}
-        <div className="flex gap-5 mt-4 md:mt-0">
+        <div className="flex md:gap-5 gap-12 mt-4 md:mt-0">
           <a href="tel:+917027511370" target="_blank" rel="noopener noreferrer">
-            <Phone className="text-[#998F8F] hover:text-white transition duration-300" size={24} />
+            <Phone className="text-[#998F8F] hover:text-white transition duration-300" size={24}/>
           </a>
           <a href="https://www.linkedin.com/in/vishesh-verma-35b31b279/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="text-[#998F8F] hover:text-white transition duration-300" size={24} />

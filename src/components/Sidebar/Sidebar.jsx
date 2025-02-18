@@ -35,9 +35,9 @@ const arr = [
 
 export const Sidebar = () => {
   return (
-    <div className="w-[42%] h-screen bg-[#FFFFFF] rounded-2xl mb-4 py-10 px-4 flex flex-col items-center justify-between sticky top-4">
+    <div className="md:w-[42%] md:h-screen bg-[#FFFFFF] rounded-2xl mb-4 md:py-10 md:px-4 md:gap-0 gap-5 flex flex-col items-center justify-between md:sticky md:top-4 p-5">
       {/* {logo image} */}
-      <div className="w-[230px] h-[230px] overflow-hidden">
+      <div className="md:w-[230px] md:h-[230px] w-[150px] h-[150px] overflow-hidden">
         <img
           src={logo}
           alt="Logo_Image"
@@ -46,10 +46,10 @@ export const Sidebar = () => {
       </div>
 
       {/* {bio}  */}
-      <div>
-        <h1 className="text-4xl font-[700] uppercase text-center">Vishesh</h1>
-        <img src={AIimage} alt="image" className="w-24 h-24 mx-auto"/>
-        <p className="text-center text-[1rem] leading-[20px] w-full text-gray-500 font-[500]">
+      <div className="md:px-0 px-2 md:py-0 py-2 md:rounded-none rounded-2xl md:border-none md:w-full  border-l-[1.5px] border-black border-r-[1.5px]">
+        <h1 className="md:text-4xl text-3xl font-[700] uppercase text-center">Vishesh</h1>
+        <img src={AIimage} alt="image" className="w-24 md:block hidden h-24 mx-auto"/>
+        <p className="text-center md:text-[1rem] md:mt-2 text-sm leading-[20px] md:w-full md:px-0 px-10 text-gray-500 md:font-[500] font-[600]">
           "A passionate full-stack developer, building high-performance,
           scalable, and user-centric web applications."
         </p>
@@ -57,7 +57,7 @@ export const Sidebar = () => {
 
       {/* {social links}  */}
       <TooltipProvider>
-        <div className="flex w-full justify-evenly">
+        <div className="flex w-full md:justify-evenly justify-center md:gap-0 gap-10">
           {arr.map((item, index) => {
             return (
               <Tooltip key={index}>
