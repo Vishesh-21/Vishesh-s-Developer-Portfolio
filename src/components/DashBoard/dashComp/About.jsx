@@ -7,7 +7,7 @@ export const About = () => {
   const {githubData} = useContext(GitHubContext);
   
   return (
-    <div className="text-white">
+    <div className="text-white scroll-mt-24" id="home">
       <div>
         <h1 className="md:text-[6rem] md:text-start text-center  text-[3rem] text-white font-extrabold uppercase md:leading-14">
           Full STack

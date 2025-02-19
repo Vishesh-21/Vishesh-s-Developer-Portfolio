@@ -32,7 +32,7 @@ const tech = [
 
 export const Skills = () => {
   return (
-    <div className="text-white md:mt-24 mt-10">
+    <div className="text-white md:mt-24 mt-10 scroll-mt-24" id="tools">
       <div>
         <h1 className="md:text-[6rem] text-[3rem] text-white uppercase font-extrabold md:leading-14 leading-8 md:text-start text-center">
           Languages &
@@ -41,8 +41,8 @@ export const Skills = () => {
           Frameworks
         </h2>
         <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 pl-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
-          {arr.map((item) => (
-            <Badge className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
+          {arr.map((item,index) => (
+            <Badge key={index} className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
               {item}
             </Badge>
           ))}
@@ -81,8 +81,8 @@ export const Skills = () => {
           Technologies
         </h2>
         <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 pl-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
-          {tech.map((item) => (
-            <Badge className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
+          {tech.map((item,index) => (
+            <Badge key={index} className="bg-white text-black py-2 px-6 rounded-full hover:bg-white">
               {item}
             </Badge>
           ))}

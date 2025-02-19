@@ -6,18 +6,17 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useNavigate } from "react-router-dom";
 
 const arr = [
   {
     icon: <Home size={22} />,
     title: "Home",
-    path: "/",
+    path: "/#home",
   },
   {
     icon: <Folder size={22} />,
     title: "Projects",
-    path: "/projects",
+    path: "/#projects",
   },
   {
     icon: <Briefcase size={22} />,
@@ -26,19 +25,16 @@ const arr = [
   {
     icon: <Wrench size={22} />,
     title: "Tools",
+    path : "/#tools"
   },
   {
     icon: <User size={22} />,
-    title: "Contact  Us",
+    title: "Let's work together",
+    path : "/#contact"
   },
 ];
 
 const Navbar = () => {
-  const navigate = useNavigate();
-
-  const handleClick = (path) => {
-    if (path) navigate(path);
-  };
 
   return (
     <div className="flex items-center justify-center">
@@ -47,10 +43,10 @@ const Navbar = () => {
           <div className="flex gap-10">
             {arr.map((item, index) => {
               return (
-                <div onClick={() => handleClick(item?.path)}>
-                  <Tooltip key={index}>
+                <div key={index}>
+                  <Tooltip>
                     <TooltipTrigger className="text-white cursor-pointer">
-                      {item.icon}
+                      <a href={item.path}>{item.icon}</a>
                     </TooltipTrigger>
                     <TooltipContent className="mt-4">
                       <p>{item.title}</p>

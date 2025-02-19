@@ -13,27 +13,26 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       alert("Email service is not configured properly.");
       return;
     }
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
-      .then(
-        () => {
-          setIsSent(true);
-          alert("Email sent successfully!");
-        },
-        (error) => {
-          console.error("Error sending email:", error);
-          alert("Failed to send email. Please try again.");
-        }
-      );
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(
+      () => {
+        setIsSent(true);
+        alert("Email sent successfully!");
+      },
+      (error) => {
+        console.error("Error sending email:", error);
+        alert("Failed to send email. Please try again.");
+      }
+    );
   };
 
   return (
-    <div className="md:mt-24 md:mb-8 mt-12">
+    <div className="md:mt-24 md:mb-8 mt-12 scroll-mt-16" id="contact">
       <div>
         <h1 className="md:text-[6rem] text-[3rem] text-white font-extrabold md:leading-14 uppercase leading-8 md:text-start text-center">
           Let's Work

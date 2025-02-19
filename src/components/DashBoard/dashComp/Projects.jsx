@@ -9,12 +9,13 @@ import { useNavigate } from "react-router-dom";
 export const Projects = () => {
 
   const navigate = useNavigate();
+
   const handleClick = () => {
     navigate('/projects')
   }
 
   return (
-    <div className="md:mt-30 mt-18">
+    <div className="md:mt-30 mt-18 scroll-mt-24" id="projects">
       <div>
         <h1 className="md:text-[6rem] text-[3rem] text-white md:text-start text-center font-extrabold uppercase md:leading-14 leading-0">
           Recent
@@ -126,7 +127,7 @@ export const Projects = () => {
       <div className="text-center mt-8">
         <button
           type="button"
-          class="text-black bg-white focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-gray-800 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-200/80 md:font-semibold md:rounded-lg cursor-pointer rounded-md text-sm md:px-5 md:py-2.5 px-2 py-1 text-center me-2 mb-2"
+          className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-gray-800 shadow-lg shadow-gray-500/50 dark:shadow-lg dark:shadow-gray-200/80 md:font-semibold md:rounded-lg cursor-pointer rounded-md text-sm md:px-5 md:py-2.5 px-2 py-1 text-center me-2 mb-2"
           onClick={handleClick}
         >
           See More Projects <ArrowRight className="inline" />
