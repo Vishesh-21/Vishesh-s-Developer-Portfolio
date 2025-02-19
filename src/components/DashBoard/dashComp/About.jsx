@@ -26,7 +26,7 @@ export const About = () => {
       {/* {project description}  */}
       <div className="flex md:w-[70%] items-center justify-between md:my-10 my-7">
         <div>
-          <h1 className="md:text-[5rem] text-[3rem] font-semibold md:leading-22">0</h1>
+          <h1 className="md:text-[5rem] text-[3rem] font-semibold md:leading-22">&lt;1</h1>
           <p className="text-[#998F8F] md:text-[1rem] text-sm md:leading-5 leading-4">
             YEARS OF <br /> EXPERIENCE
           </p>

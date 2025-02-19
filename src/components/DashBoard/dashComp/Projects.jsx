@@ -38,7 +38,7 @@ export const Projects = () => {
               src={BNG}
               target="_blank"
               alt="Image"
-              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
+              className="md:w-38 md:h-38 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
               <h1 className="md:text-2xl text-xl font-bold">Business Name Generator</h1>
@@ -62,7 +62,7 @@ export const Projects = () => {
             <img
               src={JobPortal}
               alt="Image"
-              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
+              className="md:w-38 md:h-38 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
               <h1 className="md:text-2xl text-xl font-bold">Job Portal Application</h1>
@@ -86,7 +86,7 @@ export const Projects = () => {
             <img
               src={TaskManager}
               alt="Image"
-             className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
+             className="md:w-38 md:h-38 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
               <h1 className="md:text-2xl text-xl font-bold">Task Manager</h1>
@@ -109,7 +109,7 @@ export const Projects = () => {
             <img
               src={imageEditor}
               alt="Image"
-              className="md:w-42 md:h-42 w-32 h-32 object-cover rounded-2xl"
+              className="md:w-38 md:h-38 w-32 h-32 object-cover rounded-2xl"
             />
             <div>
               <h1 className="md:text-2xl text-xl font-bold">Image Editor</h1>
