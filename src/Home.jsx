@@ -3,6 +3,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar";
 import { Dashboard } from "./components/DashBoard/Dashboard";
 import Navbar from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
+import { ResumeDownloader } from "./ResumeDownloader";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <Dashboard />
       </div>
       <Footer />
+      <ResumeDownloader/>
     </>
   );
 };

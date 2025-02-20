@@ -1,14 +1,15 @@
 import React from "react";
 import logo from "@/assets/download.jpg";
-import logo2 from "@/assets/Hello.jpg";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Badge, Braces, Code2, Github, Linkedin } from "lucide-react";
+import {Braces, Code2, Github, Linkedin } from "lucide-react";
 import AIimage from '@/assets/Ai_sidebar_image.jpg'
+import { Button } from "../ui/button";
+import { motion } from "motion/react"
 
 const arr = [
   {
@@ -33,9 +34,14 @@ const arr = [
   },
 ];
 
+const headingVariant = {
+  hidden : {opacity :0,y:-50},
+  show : {opacity : 1,y : 0, transition : {duration:0.7,ease : "easeOut"}}
+}
+
 export const Sidebar = () => {
   return (
-    <div className="md:w-[42%] md:h-screen bg-[#FFFFFF] rounded-2xl mb-4 md:py-10 md:px-4 md:gap-0 gap-5 flex flex-col items-center justify-between md:sticky md:top-4 p-5">
+    <motion.div variants={headingVariant} initial="hidden" animate="show" className="md:w-[42%] md:h-screen bg-[#FFFFFF] rounded-2xl mb-4 md:py-10 md:px-4 md:gap-0 gap-5 flex flex-col items-center justify-between md:sticky md:top-4 p-5">
       {/* {logo image} */}
       <div className="md:w-[230px] md:h-[230px] w-[150px] h-[150px] overflow-hidden">
         <img
@@ -57,12 +63,12 @@ export const Sidebar = () => {
 
       {/* {social links}  */}
       <TooltipProvider>
-        <div className="flex w-full md:justify-evenly justify-center md:gap-0 gap-10">
+        <div className="flex w-full md:justify-between justify-center md:gap-0 md:mt-4 gap-10">
           {arr.map((item, index) => {
             return (
               <Tooltip key={index}>
                 <TooltipTrigger className="text-white cursor-pointer">
-                  <Badge variant="outline" className="cursor-pointer"><a href={item.link} target="_blank">{item.icon}</a></Badge>
+                  <Button variant="outline" className="cursor-pointer"><a href={item.link} target="_blank">{item.icon}</a></Button>
                 </TooltipTrigger>
                 <TooltipContent
                   className={`mt-4 ${item.title === 'GitHub' ? "bg-black" : item.title === 'HackerRank' ? "bg-green-600" : item.title === 'LinkedIn'? "bg-blue-600" : "bg-orange-600"}`}
@@ -74,6 +80,6 @@ export const Sidebar = () => {
           })}
         </div>
       </TooltipProvider>
-    </div>
+    </motion.div>
   );
 };

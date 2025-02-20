@@ -28,7 +28,7 @@ export const AllProjects = () => {
                 <h2 className="md:text-2xl text-lg font-bold capitalize md:mb-2">
                   {repo?.name}
                 </h2>
-                <p className="md:text-[0.8rem] text-[0.7rem] md:w-[300px] w-[200px]">
+                <p className="md:text-[0.8rem] text-[0.7rem] md:w-[300px] w-full">
                   {repo?.description
                     ? repo.description.split(" ").slice(0, 21).join(" ") +
                       (repo.description.split(" ").length > 21 ? " ..." : "")
@@ -37,11 +37,11 @@ export const AllProjects = () => {
               </div>
               <a
                 href={repo?.html_url}
-                className="absolute right-6 bottom-4"
+                className="absolute right-4 top-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github />
+                <Github size={20}/>
               </a>
             </div>
           );
