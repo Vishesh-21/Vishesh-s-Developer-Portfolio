@@ -114,7 +114,7 @@ export const Projects = () => {
                   src={project?.img}
                   target="_blank"
                   alt="Image"
-                  className="md:w-32 md:h-32 w-26 h-26 object-cover rounded-2xl"
+                  className="md:w-32 md:h-32 w-26 h-26 hidden md:block object-cover rounded-2xl"
                 />
                 <div>
                   <h1 className="md:text-xl text-lg md:tracking-[0.1rem] font-semibold md:font-bold">
@@ -125,7 +125,7 @@ export const Projects = () => {
                   </h2>
                 </div>
               </div>
-              <ArrowUpRight className="icon mt-4 mr-2 text-orange-600 absolute top-3 text-2xl right-3 duration-300" />
+              <ArrowUpRight className="icon md:mt-4 mr-2 text-orange-600 absolute top-3 text-2xl right-3 duration-300" />
             </motion.a>
           );
         })}
