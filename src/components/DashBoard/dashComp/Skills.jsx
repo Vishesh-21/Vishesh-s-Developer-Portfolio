@@ -14,6 +14,7 @@ const arr = [
   "NodeJS",
   "Express",
   "MongoDB",
+  "PostgreSQL",
   "MySQL",
   "REST API",
   "JAVA",
@@ -27,6 +28,7 @@ const tech = [
   "VS Code",
   "Cursor AI",
   "Postman",
+  "Prisma",
   "Vercel",
   "Linux",
   "Chat gpt",
@@ -103,7 +105,7 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Languages &
+          Core  &
         </motion.h1>
         <motion.h2
           className="md:text-[6rem] text-[3rem] text-[#353334] uppercase font-extrabold md:leading-20 md:mt-6 md:text-start text-center"
@@ -112,11 +114,11 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Frameworks
+          Technologies
         </motion.h2>
 
         {/* animate skills section  */}
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
+        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-10 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
           {arr.map((item, index) => (
             <motion.div
               key={index}
@@ -206,7 +208,7 @@ export const Skills = () => {
         >
           Technologies
         </motion.h2>
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-4 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
+        <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-10 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
           {tech.map((item, index) => (
             <motion.div
               variants={badgeVariants}

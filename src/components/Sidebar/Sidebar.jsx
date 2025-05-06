@@ -41,7 +41,7 @@ const headingVariant = {
 
 export const Sidebar = () => {
   return (
-    <motion.div variants={headingVariant} initial="hidden" animate="show" className="md:w-[42%] md:h-screen bg-[#FFFFFF] rounded-2xl mb-4 md:py-10 md:px-4 md:gap-0 gap-5 flex flex-col items-center justify-between md:sticky md:top-4 p-5">
+    <motion.div variants={headingVariant} initial="hidden" animate="show" className="md:h-screen bg-[#FFFFFF] rounded-2xl mb-4 md:py-10 md:px-4 md:gap-0 gap-5 flex flex-col items-center justify-between md:sticky md:top-4 p-5">
       {/* {logo image} */}
       <div className="md:w-[230px] md:h-[230px] w-[150px] h-[150px] overflow-hidden">
         <img

@@ -9,12 +9,16 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full mt-28 flex md:flex-row flex-col gap-10 md:px-[100px] px-[30px] mb-4">
-        <Sidebar />
-        <Dashboard />
+      <div className="mt-28 flex md:flex-row flex-col gap-10 max-w-6xl mx-auto md:px-0 px-6">
+        <div className="md:w-[30%] w-full">
+          <Sidebar />
+        </div>
+        <div className="md:w-[70%] w-full overflow-x-hidden">
+          <Dashboard />
+        </div>
       </div>
       <Footer />
-      <ResumeDownloader/>
+      <ResumeDownloader />
     </>
   );
 };

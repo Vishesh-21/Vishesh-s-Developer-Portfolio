@@ -19,7 +19,7 @@ export const AllProjects = () => {
           return (
             <div
               key={index}
-              className="relative flex md:p-4 px-2 gap-7 items-center justify-start rounded-xl border-l-[2px] border-r-[2px]"
+              className="relative flex md:p-4 px-2 gap-7 items-center justify-start rounded-xl border-l-[2px] border-r-[2px]  overflow-hidden"
             >
               <h1 className="md:text-[7rem] text-[4rem] font-extrabold  gap-2">
                 {Number(index) + 1}
@@ -28,7 +28,7 @@ export const AllProjects = () => {
                 <h2 className="md:text-2xl text-lg font-bold capitalize md:mb-2">
                   {repo?.name}
                 </h2>
-                <p className="md:text-[0.8rem] text-[0.7rem] md:w-[300px] w-full">
+                <p className="text-medium w-[90%]">
                   {repo?.description
                     ? repo.description.split(" ").slice(0, 21).join(" ") +
                       (repo.description.split(" ").length > 21 ? " ..." : "")
@@ -41,7 +41,7 @@ export const AllProjects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github size={20}/>
+                <Github size={20} />
               </a>
             </div>
           );

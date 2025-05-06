@@ -8,7 +8,7 @@ export const PortLoader = ({ onLoadingComplete }) => {
     const timer = setTimeout(() => {
       setIsExiting(true);
       setTimeout(onLoadingComplete, 600); // Fade-out before unmounting
-    }, 2200);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
