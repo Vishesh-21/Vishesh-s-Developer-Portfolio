@@ -9,7 +9,7 @@ export const PortLoader = ({ onLoadingComplete }) => {
     const timer = setTimeout(() => {
       setIsExiting(true);
       setTimeout(onLoadingComplete, 600);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
@@ -34,27 +34,44 @@ export const PortLoader = ({ onLoadingComplete }) => {
       </motion.div>
 
       {/* Clean Typography */}
-      <motion.h1
-        className="text-3xl md:text-4xl font-light tracking-wide mb-12 text-gray-100"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
+      <motion.div
+        className="flex text-3xl md:text-4xl space-x-2 font-light tracking-wide mb-12 text-gray-100"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
       >
-        Portfolio
-      </motion.h1>
+        {"Portfolio".split("").map((char, idx) => (
+          <motion.span
+            key={idx}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            {char}
+          </motion.span>
+        ))}
+      </motion.div>
 
       {/* Minimal Loading Animation */}
-      <motion.div className="flex space-x-1">
+      <motion.div className="flex space-x-3 mt-4">
         {[0, 1, 2].map((i) => (
           <motion.div
             key={i}
-            className="w-2 h-2 bg-white rounded-full"
+            className="w-3 h-3 bg-white rounded-full"
             animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.5, 1, 0.5],
+              y: [0, -8, 0],
+              opacity: [0.4, 1, 0.4],
             }}
             transition={{
-              duration: 1.5,
+              duration: 1.2,
               repeat: Infinity,
               delay: i * 0.2,
               ease: "easeInOut",

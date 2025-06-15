@@ -105,7 +105,7 @@ export const Contact = () => {
       </div>
 
       <motion.div
-        className="text-white text-sm md:mt-8 mt-4"
+        className="text-white text-sm md:mt-8 mt-4 px-4"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
