@@ -55,7 +55,7 @@ const itemVariants = {
 const Navbar = () => {
   return (
     <div className="flex items-center justify-center">
-      <nav className="bg-[#1C1A19] py-3 px-6 fixed top-4 rounded-b-4xl z-10">
+      <nav className="bg-[#1C1A19] py-3 px-6 fixed top-4 rounded-b-4xl z-100">
         <TooltipProvider className="flex">
           <motion.div
             className="flex gap-10"
