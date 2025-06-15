@@ -5,7 +5,7 @@ import { AllProjects } from "./components/DashBoard/dashComp/AllProjects";
 import { PortLoader } from "./components/Loader/PortLoader";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <>

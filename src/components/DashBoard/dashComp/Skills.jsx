@@ -95,7 +95,7 @@ const subheadingVariants = {
 
 export const Skills = () => {
   return (
-    <div className="text-white md:mt-24 mt-10 scroll-mt-24" id="tools">
+    <div className="text-white md:mt-16 mt-10 scroll-mt-24" id="tools">
       {/* animate heading  */}
       <div>
         <motion.h1
@@ -105,7 +105,7 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Core  &
+          Code 
         </motion.h1>
         <motion.h2
           className="md:text-[6rem] text-[3rem] text-[#353334] uppercase font-extrabold md:leading-20 md:mt-6 md:text-start text-center"
@@ -114,7 +114,7 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Technologies
+          ToolBox
         </motion.h2>
 
         {/* animate skills section  */}
@@ -197,7 +197,7 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Tools &
+          Crafting 
         </motion.h1>
         <motion.h2
           className="md:text-[6rem] uppercase text-[3rem] text-[#353334] font-extrabold md:leading-20 md:mt-6 md:text-start text-center"
@@ -206,7 +206,7 @@ export const Skills = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          Technologies
+          Tools
         </motion.h2>
         <div className="flex items-center flex-wrap gap-x-5 gap-y-2 py-8 mt-10 border-l-[1px] rounded-2xl justify-center border-r-[1px]">
           {tech.map((item, index) => (
